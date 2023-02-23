@@ -12,10 +12,7 @@ public class DriversManager {
     static WebDriverManager wdm;
     static WebDriver driver;
     public static WebDriverManager getWebDriverManager(String driverName){
-        if(driverName.equalsIgnoreCase("chrome")){
-            return wdm.chromedriver();
-        }
-        else if(driverName.equalsIgnoreCase("safari")){
+       if(driverName.equalsIgnoreCase("safari")){
             return wdm.safaridriver();
         }
         else if(driverName.equalsIgnoreCase("firefox")){
